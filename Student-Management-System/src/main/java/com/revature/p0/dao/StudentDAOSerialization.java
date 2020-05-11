@@ -10,7 +10,7 @@ import com.revature.p0.Student;
 
 public class StudentDAOSerialization implements StudentDAO{
 	
-	public void saveStudent(Student stu1) throws IOException {
+	public boolean saveStudent(Student stu1) throws IOException {
 		
 		FileOutputStream fos = null;
 		ObjectOutputStream oos = null;
@@ -21,11 +21,13 @@ public class StudentDAOSerialization implements StudentDAO{
 		oos.writeObject(stu1);
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
+		return (Boolean) null;
 	} finally {
 		try {
 			fos.close();
 		} catch (IOException e) {
 			e.printStackTrace();
+			return (Boolean) null;
 		}
 		
 		try {
@@ -34,6 +36,7 @@ public class StudentDAOSerialization implements StudentDAO{
 			e.printStackTrace();
 		}
 	}
+	return true;
 	}
 
 	public Student getStudent(String Student) {

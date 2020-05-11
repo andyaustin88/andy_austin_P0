@@ -3,6 +3,7 @@ package com.revature.p0.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -42,8 +43,9 @@ public class UserTest {
 	}
 	
 	@Test
-	public void testseeBalance() {
-		assertEquals("Student tuition should reflect the number of classes that they have enrolled in.");student.seeBalance();
+	public void enroll(){
+		//Don't even know where to begin here. Need to go over this part again. 
+		
 	}
 	@Test(expected = TuitionLessThanZeroException.class)
 	public void testTuitionShowingNegative() throws TuitionShowingNegativeException {

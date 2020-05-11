@@ -9,7 +9,7 @@ public class TuitionLessThanZeroException extends Exception {
 		super(MSG);
 	}
 	
-	public TuitionLessThanZeroException(throwable cause) {
+	public TuitionLessThanZeroException(Throwable cause) {
 		super(MSG, cause);
 	}
 }
