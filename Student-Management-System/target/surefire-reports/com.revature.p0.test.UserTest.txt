@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.revature.p0.test.UserTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+com.revature.p0.test.UserTest.testTuitionShowingNegative()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problems: 
+	TuitionLessThanZeroException cannot be resolved to a type
+	Class<TuitionLessThanZeroException> cannot be resolved to a type
+	at com.revature.p0.test.UserTest.testTuitionShowingNegative(UserTest.java:50)
+
