@@ -71,16 +71,7 @@ public class Student implements Serializable{
 	public void seeBalance() {
 		System.out.println("Your current tuition balance is $" +tuitionBalance);
 	}
-	public void payTuition() {
-		seeBalance();
-		System.out.println("Enter your payment: $");
-		Scanner in = new Scanner(System.in);
-		int payment = in.nextInt();
-		tuitionBalance = tuitionBalance - payment;
-		System.out.println("You've paid $" + payment);
-		seeBalance();
 	
-	}
 	// show status- 
 	public String showInfo() {
 		return "Name: " + firstName + " " + lastName +
@@ -88,6 +79,15 @@ public class Student implements Serializable{
 				"\nCourses Enrolled: "+ courses + 
 				"\nTuition Balance: $ " + tuitionBalance;
 	}
+	{
+	seeBalance();
+	System.out.println("Enter your payment: $");
+	Scanner in = new Scanner(System.in);
+	int payment = in.nextInt();
+	tuitionBalance = tuitionBalance - payment;
+	System.out.println("You've paid $" + payment);
+	seeBalance();
+}
 	
 	
 	public static void writeToFile(Student stu1) throws FileNotFoundException, IOException{
@@ -96,6 +96,11 @@ public class Student implements Serializable{
 		objectOutputStream.writeObject(stu1);
 	}
 	public static void readFile() {
+		
+	}
+
+	public void payTuition() {
+		//
 		
 	}
 		}

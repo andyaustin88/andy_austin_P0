@@ -15,5 +15,5 @@ public class SystemApplication {
 // arrange student files. What classes will they be enrolled in? 
 	
 	}
- // Create a certain number of students and arrange them according to their classes and information. 
+ // For database. Create a certain number of students and arrange them according to their classes and information. 
 }
